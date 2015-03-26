@@ -1,12 +1,12 @@
 # JuliaResearchSnippets.jl
 
-#### 将Julia使用在科研中的各种尝试
+#### 收集整理将 Julia 使用在科研中的各种尝试
 
 [![Build Status](https://travis-ci.org/quxiaofeng/JuliaResearchSnippets.jl.svg)](https://travis-ci.org/quxiaofeng/JuliaResearchSnippets.jl)
 
 ## `test/dataframe_transparent_rw_test.jl`
 
-尝试写入、读取带有 Array 元素的 DataFrame 数据。测试了五种方法，只有一种成功。
+写入、读取带有 Array 元素的 DataFrame 数据。测试了五种方法，只有一种成功。
 
 ### 需要读写的数据格式
 
@@ -19,9 +19,10 @@ dataSet[:Feature]  = {rand(0:255,5,5), zeros(5,5), ones(5,5)}
 ### 要求
 
 + 简单直接的存储和读取
-+ 数据不出现差异
++ 直接解析结构化的数据
++ 数据完整准确可测试
 
-### 失败方法
+### 失败尝试
 
 + `MAT.jl` 写入时出错
 + `JSON.jl` 读取时 Array 都进来还是 String
