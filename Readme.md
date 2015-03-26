@@ -25,9 +25,9 @@ dataSet[:Feature]  = {rand(0:255,5,5), zeros(5,5), ones(5,5)}
 ### 失败尝试
 
 + `MAT.jl` 写入时出错
-+ `JSON.jl` 读取时 Array 都进来还是 String
-+ `DataFrame` 读取时 Array 都进来还是 String
-+ `Pandas` 读取时 Array 都进来还是 String
++ `JSON.jl` 读取时 Array 读进来还是 String
++ `DataFrame` 读取时 Array 读进来还是 String
++ `Pandas` 读取时 Array 读进来还是 String
 
 ### 成功方法
 
